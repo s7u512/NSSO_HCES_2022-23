@@ -11,7 +11,7 @@ Specifically, the third script estimates the national average Monthly Per Capita
 3. Run the scripts in order through `R` (An IDE like `RStudio` is recommended)
 4. Your output files should be available in the `Output` folder
 
-## 5. Contributing
+## Contributing
 
 These scripts were designed for personal use, but if you would like to contribute to this project, feel free to [reach out](https://twitter.com/all_awry). I would also appreciate help to expand documentation. Do [open an issue](https://github.com/s7u512/NSSO-77-SAS/issues/new) or [reach out](https://twitter.com/all_awry) for any help.
 
