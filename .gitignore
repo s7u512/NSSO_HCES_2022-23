@@ -48,6 +48,6 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-RawData/*
-Output/*
-OtherDocumentation/*
+#RawData/*
+#Output/*
+#OtherDocumentation/*
