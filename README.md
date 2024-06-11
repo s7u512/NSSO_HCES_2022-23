@@ -3,7 +3,7 @@ Basic Estimation Scripts for Household Consumption Expenditure Survey (2022-23) 
 
 ## Description
 This repository contains a few scripts to extract unit level data from the fixed width files for the Household Consumption Expenditure Survey: 2022-23 (HCES22) and do a basic estimation check to match with the associated Report from the National Sample Survey Office.
-Specifically, the third script estimates the national average Monthly Per Capita Expenditure in Rural India at nominal prices. This matches with the figure in the official report up to two decimal places (`3773.052`).
+Specifically, the third script estimates the national average Monthly Per Capita Expenditure in Rural India at nominal prices. This matches with the figure in the official report up to two decimal places.
 
 ## Usage
 1. Clone the repo or download it. See [here](https://resources.github.com/github-and-rstudio/) for some help.
