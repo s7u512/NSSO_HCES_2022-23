@@ -1,3 +1,7 @@
+# matched fractile classes
+03.Estimate_MPCE_Fractile_Classes_Full.R
+04.FractileMaster.R
+
 # History files
 .Rhistory
 .Rapp.history
@@ -51,6 +55,3 @@ rsconnect/
 RawData/*
 Output/*
 OtherDocumentation/*
-
-03.Estimate_MPCE_Fractile_Classes_Full.R
-04.FractileMaster.R
