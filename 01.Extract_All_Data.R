@@ -78,14 +78,14 @@ data_frames <- future_map(levels, read_fwf_level)
 # End the multisession by resetting the plan to sequential
 plan(sequential)
 
-#######
-
-# Alternatively, Process it sequentially
-# Use this method if there is a RAM constraint
-# Process each level sequentially and store the data frames in a list
-data_frames <- lapply(levels, function(level) {
-  read_fwf_level(level)
-})
+# #######
+# 
+# # Alternatively, Process it sequentially
+# # Use this method if there is a RAM constraint
+# # Process each level sequentially and store the data frames in a list
+# data_frames <- lapply(levels, function(level) {
+#   read_fwf_level(level)
+# })
 
 # Assign the data frames to the global environment with dynamic names
 for (i in seq_along(levels)) {

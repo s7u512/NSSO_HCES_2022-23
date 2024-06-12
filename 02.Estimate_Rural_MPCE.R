@@ -3,7 +3,6 @@ rm(list = ls())
 
 # Load necessary libraries
 library(tidyverse) # for data manipulation
-library(readr) # to read fixed width files
 
 # Load data from previous analysis
 load("./Output/level_14.Rdata")
@@ -162,6 +161,12 @@ Results <- Results %>%
     TE = FoodExpense + (ConsumablesExpense * (Household.size.F/Household.size.C)) + (DurablesExpense * (Household.size.F/Household.size.D)),
     MPCE = TE/Household.size.F
   )
+
+
+# Save the dataframe for future analysis
+save(Results, file = "./Output/Results.RData")
+write.csv(Results, file = "./Output/Results.csv", row.names = FALSE)
+
 
 # Subset data for Rural areas
 RuralResults <- Results %>% filter(Sector == 1)
