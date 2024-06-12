@@ -30,11 +30,6 @@ head(State_list)
 
 ########
 
-# Set up parallel processing with specified number of workers
-# It uses all but two cores/threads of your system
-plan(multisession, workers = parallel::detectCores() - 2) 
-
-
 # Define a function to read a fixed-width file based on the level
 read_fwf_level <- function(level) {
   # Get the file name based on the level
@@ -72,11 +67,25 @@ read_fwf_level <- function(level) {
   return(df)
 }
 
+#######
+# Option 1: Set up parallel processing with specified number of workers
+# It uses all but two cores/threads of your system
+plan(multisession, workers = parallel::detectCores() - 2) 
+
 # Use future_map to read files in parallel and return a list of data frames
 data_frames <- future_map(levels, read_fwf_level)
 
 # End the multisession by resetting the plan to sequential
 plan(sequential)
+
+#######
+
+# Alternatively, Process it sequentially
+# Use this method if there is a RAM constraint
+# Process each level sequentially and store the data frames in a list
+data_frames <- lapply(levels, function(level) {
+  read_fwf_level(level)
+})
 
 # Assign the data frames to the global environment with dynamic names
 for (i in seq_along(levels)) {
