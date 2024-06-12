@@ -21,7 +21,7 @@ I am not an expert in either `R` or sample survey estimation.
 
 I have done my best to keep the code uniform and well-commented. However, there may be mistakes and/or better ways to approach the task I set out to do. Please [let me know](https://twitter.com/all_awry) if you spot any issues or have suggestions for improvement.
 
-I have not done an exhaustive check of formatting consistency or even other potential issues, so please don't hesitate to [open an issue](https://github.com/s7u512/NSSO-77-SAS/issues/new) or [reach out](https://twitter.com/all_awry) if you find something.
+I have not done an exhaustive check of formatting consistency or even other potential issues, so please don't hesitate to [open an issue](https://github.com/s7u512/NSSO_HCES_2022-23/issues/new) or [reach out](https://twitter.com/all_awry) if you find something.
 
 ## License
 
