@@ -7,7 +7,7 @@ Specifically, the third script estimates the national average Monthly Per Capita
 
 ## Usage
 1. Clone the repo or download it. See [here](https://resources.github.com/github-and-rstudio/) for some help.
-2. Place the fixed width files in the RawData folder. They are available at the [official website](https://microdata.gov.in/nada43/index.php/catalog/194) which requires a sign up, or alternatively [here](https://github.com/advaitmoharir/hces_2022/) 
+2. Place the fixed width files in the RawData folder. They are available at the [official website](https://microdata.gov.in/nada43/index.php/catalog/194) which requires a sign up, or alternatively [here](https://github.com/advaitmoharir/hces_2022/) (temporarily [here as well](https://github.com/xyzhang9/hces_2022/tree/main/03_raw))
 3. Run the scripts in order through `R` (An IDE like `RStudio` is recommended)
 4. Your output files should be available in the `Output` folder
 
