@@ -7,9 +7,9 @@ Specifically, the third script estimates the national average Monthly Per Capita
 
 ## Usage
 1. Clone the repo or download it. See [here](https://resources.github.com/github-and-rstudio/) for some help.
-2. Place the fixed width files in the RawData folder. They are available at the [official website](https://microdata.gov.in/nada43/index.php/catalog/194) which requires a sign up, or alternatively [here](https://github.com/advaitmoharir/hces_2022/) 
-3. Run the scripts in order through `R` (An IDE like `RStudio` is recommended)
-4. Your output files should be available in the `Output` folder
+2. Place the fixed width files in the `RawData` directory. They are available at the [official website](https://microdata.gov.in/nada43/index.php/catalog/194) which requires a sign up, or alternatively [here](https://github.com/advaitmoharir/hces_2022/) (temporarily [here as well](https://github.com/xyzhang9/hces_2022/tree/main/03_raw)).
+3. Run the scripts in order through `R` (An IDE like `RStudio` is recommended).
+4. Your output files should be available in the `Output` directory.
 
 ## Contributing
 
@@ -21,7 +21,7 @@ I am not an expert in either `R` or sample survey estimation.
 
 I have done my best to keep the code uniform and well-commented. However, there may be mistakes and/or better ways to approach the task I set out to do. Please [let me know](https://twitter.com/all_awry) if you spot any issues or have suggestions for improvement.
 
-I have not done an exhaustive check of formatting consistency or even other potential issues, so please don't hesitate to [open an issue](https://github.com/s7u512/NSSO-77-SAS/issues/new) or [reach out](https://twitter.com/all_awry) if you find something.
+I have not done an exhaustive check of formatting consistency or even other potential issues, so please don't hesitate to [open an issue](https://github.com/s7u512/NSSO_HCES_2022-23/issues/new) or [reach out](https://twitter.com/all_awry) if you find something.
 
 ## License
 
