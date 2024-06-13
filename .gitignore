@@ -1,7 +1,9 @@
 # matched fractile classes
-03.Estimate_MPCE_Fractiles_Full.R
-04.Estimate_MPCE_Fractile_Classes_Full.R
-05.FractileMaster.R
+03.Assign_Basic_Household_Characteristics.R
+04.Estimate_MPCE_Fractiles_Full.R
+05.Table_MPCE_Fractile_Classes_All.R
+06.Table_Fractiles_Master.R
+wip.R
 
 # History files
 .Rhistory
