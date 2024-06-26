@@ -8,7 +8,7 @@ library(readxl) # to read spreadsheets in .xlsx format
 library(future) # for parallel processing
 library(furrr) # for parallel processing
 library(data.table) # for saving large csv files efficiently
-
+library(purrr) # For Batch Processing of chunks of files
 #######
 
 # Read the layout file which contains the structure of the fixed-width files
@@ -86,6 +86,39 @@ plan(sequential)
 # data_frames <- lapply(levels, function(level) {
 #   read_fwf_level(level)
 # })
+
+
+#One can do this alternatively by chunks that can be adjusted according to their PC's RAM capacity for quicker processing
+#library(purrr) #useful for chunking/Batch Processing
+# # Define chunk size
+# chunk_size <- 5  # Adjust this value based on your system's capacity!!
+# 
+# # Split levels into chunks
+# level_chunks <- split(levels, ceiling(seq_along(levels) / chunk_size))
+# 
+# # Initialize an empty list to store all data frames
+# all_data_frames <- list()
+# 
+# # Process each chunk
+# for (chunk in level_chunks) 
+#   {
+#   # Set up parallel processing for this chunk
+#   plan(multisession, workers = parallel::detectCores() - 2)
+#   
+#   # Process the chunk
+#   chunk_data_frames <- future_map(chunk, read_fwf_level)
+#   
+#   # End the multisession
+#   plan(sequential)
+#   
+#   # Add the chunk results to the main list
+#   all_data_frames <- c(all_data_frames, chunk_data_frames)
+#   
+#   # Optional: Forced garbage cleaning to free up memory
+#   gc()
+# }
+# # Now all_data_frames contains all the processed data, similar to the original data_frames
+
 
 # Assign the data frames to the global environment with dynamic names
 for (i in seq_along(levels)) {
