@@ -6,6 +6,7 @@
 wip.R
 wip2.R
 
+
 # History files
 .Rhistory
 .Rapp.history
@@ -59,3 +60,4 @@ rsconnect/
 RawData/*
 Output/*
 OtherDocumentation/*
+OtherScripts/*
