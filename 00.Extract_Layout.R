@@ -61,6 +61,9 @@ for (i in seq_along(levels)) {
 # Combine all levels into one dataframe for export if needed
 final_combined_layout <- bind_rows(combined_layouts, .id = "Level")
 
+# Caught an error
+final_combined_layout <- final_combined_layout %>% filter(!(Item == "Common-ID"))
+
 head(final_combined_layout)
 
 write.csv(final_combined_layout, "./Output/Layout.csv", row.names = FALSE)  
